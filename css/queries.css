@@ -1,0 +1,131 @@
+/* ************************************************* */
+/* BELOW 1300PX (Smaller desktops) *
+/* ************************************************* */
+@media (max-width: 81.25em) {
+  .container {
+    padding: 0rem 4.2rem;
+  }
+
+  .hero-img {
+    left: 46%;
+  }
+
+  .hero-section {
+    margin-bottom: 32rem;
+  }
+}
+
+/* ************************************************* */
+/* BELOW 1200PX (Tablets) *
+/* ************************************************* */
+@media (max-width: 75em) {
+  .container {
+    padding: 0rem 3rem;
+  }
+
+  .hero-img {
+    left: 40%;
+  }
+
+  .hero-section {
+    margin-bottom: 36rem;
+  }
+
+  .list-courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.section-courses {
+  margin-bottom: 14rem;
+}
+
+.course {
+  gap: 3.2rem;
+}
+
+/* ************************************************* */
+/* BELOW 980PX (Tablets) *
+/* ************************************************* */
+@media (max-width: 61.25em) {
+  .hero-img {
+    background-image: url("/assets/image-hero-tablet.png");
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+
+  .course-list-item.list-cta:hover {
+    background-image: url("/assets/card-photo-tablet.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-section {
+    margin-bottom: 12rem;
+  }
+}
+
+/* ************************************************* */
+/* BELOW 800PX (Mobiles) *
+/* ************************************************* */
+@media (max-width: 50em) {
+  .container {
+    padding: 0rem 2.4rem;
+  }
+
+  .navbar {
+    margin-bottom: 11rem;
+  }
+
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    gap: 6rem;
+  }
+}
+
+/* ************************************************* */
+/* BELOW 640PX (Mobiles) *
+/* ************************************************* */
+@media (max-width: 40em) {
+  html {
+    font-size: 70%;
+  }
+
+  .container {
+    padding: 0rem 1.4rem !important;
+  }
+
+  .section-courses {
+    margin-bottom: 8rem;
+  }
+
+  .navbar {
+    margin-bottom: 8rem;
+  }
+
+  .hero-container {
+    width: 100%;
+  }
+
+  .course-list-item.list-cta {
+    height: 25rem;
+    font-size: 3.6rem;
+  }
+
+  .hero-img {
+    background-image: url("/assets/image-hero-mobile.png");
+    position: relative;
+    height: 34rem;
+    left: 0;
+    top: 0;
+    align-self: center;
+  }
+
+  .list-courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
