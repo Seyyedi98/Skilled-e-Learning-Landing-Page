@@ -49,14 +49,14 @@
 /* ************************************************* */
 @media (max-width: 61.25em) {
   .hero-img {
-    background-image: url("/assets/image-hero-tablet.png");
+    background-image: url("../assets/image-hero-tablet.png");
     height: 100%;
     top: 0;
     right: 0;
   }
 
   .course-list-item.list-cta:hover {
-    background-image: url("/assets/card-photo-tablet.png");
+    background-image: url("../assets/card-photo-tablet.png");
     background-size: cover;
     background-position: center;
   }
@@ -117,7 +117,7 @@
   }
 
   .hero-img {
-    background-image: url("/assets/image-hero-mobile.png");
+    background-image: url("../assets/image-hero-mobile.png");
     position: relative;
     height: 34rem;
     left: 0;
