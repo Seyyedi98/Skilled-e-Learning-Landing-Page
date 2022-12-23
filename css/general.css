@@ -13,15 +13,7 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #555;
   background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
-}
-
-img {
-  max-width: 100%;
-  display: inline-block;
-}
-
-picture {
-  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -33,7 +25,6 @@ select {
 }
 
 .container {
-  max-width: 118rem;
   padding: 0rem 5.6rem;
   margin: 0 auto;
 }
