@@ -6,29 +6,21 @@
     padding: 0rem 4.2rem;
   }
 
-  .hero-img {
-    left: 46%;
-  }
-
   .hero-section {
-    margin-bottom: 32rem;
+    margin-bottom: 24rem;
   }
 }
 
 /* ************************************************* */
-/* BELOW 1200PX (Tablets) *
+/* BELOW 1200PX (Tablets Landscape) *
 /* ************************************************* */
 @media (max-width: 75em) {
   .container {
-    padding: 0rem 3rem;
-  }
-
-  .hero-img {
-    left: 40%;
+    padding: 0rem 3rem !important;
   }
 
   .hero-section {
-    margin-bottom: 36rem;
+    margin-bottom: 18rem;
   }
 
   .list-courses {
@@ -48,17 +40,19 @@
 /* BELOW 980PX (Tablets) *
 /* ************************************************* */
 @media (max-width: 61.25em) {
-  .hero-img {
-    background-image: url("../assets/image-hero-tablet.png");
-    height: 100%;
-    top: 0;
-    right: 0;
-  }
-
   .course-list-item.list-cta:hover {
     background-image: url("../assets/card-photo-tablet.png");
     background-size: cover;
     background-position: center;
+  }
+
+  .hero-img {
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 70vh;
+    background-image: url("../assets/image-hero-tablet.png");
+    background-position: bottom left;
   }
 
   .hero-section {
@@ -67,15 +61,16 @@
 }
 
 /* ************************************************* */
-/* BELOW 800PX (Mobiles) *
+/* BELOW 800PX (Mobiles Landscape) *
 /* ************************************************* */
 @media (max-width: 50em) {
   .container {
-    padding: 0rem 2.4rem;
+    padding: 0rem 2.4rem !important;
   }
 
   .navbar {
-    margin-bottom: 11rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
   }
 
   .hero-container {
@@ -92,23 +87,42 @@
 /* ************************************************* */
 @media (max-width: 40em) {
   html {
-    font-size: 70%;
+    font-size: 90%;
   }
 
   .container {
     padding: 0rem 1.4rem !important;
   }
 
+  .logo,
+  .btn-navbar-cta,
+  .btn-footer-cta {
+    transform: scale(0.8);
+  }
+
+  .hero-img {
+    position: relative;
+    background-image: url("../assets/image-hero-mobile.png");
+    background-position: center;
+    background-size: 435px 409px;
+    height: 386px;
+    width: 100%;
+    margin: auto;
+  }
   .section-courses {
     margin-bottom: 8rem;
   }
 
-  .navbar {
-    margin-bottom: 8rem;
+  p {
+    font-size: 2.4rem !important;
   }
 
   .hero-container {
     width: 100%;
+  }
+
+  .course {
+    gap: 1.8rem;
   }
 
   .course-list-item.list-cta {
@@ -116,16 +130,13 @@
     font-size: 3.6rem;
   }
 
-  .hero-img {
-    background-image: url("../assets/image-hero-mobile.png");
-    position: relative;
-    height: 34rem;
-    left: 0;
-    top: 0;
-    align-self: center;
-  }
-
   .list-courses {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-items {
+    padding: 1rem 0;
+    transform: scale(0.8);
+    justify-content: space-between;
   }
 }
